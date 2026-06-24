@@ -70,8 +70,8 @@ export default function Hero() {
 
         <p className="font-sans text-[clamp(1rem,2vw,1.25rem)] text-foreground/60 max-w-2xl leading-relaxed mb-12">
           Forty miles through slot canyons, natural arches, and red rock wilderness.
-          A week without signal, schedule, or pretense. Eight men. One canyon
-          that will not forget you.
+          A week without signal, schedule, or pretense. Move together as a
+          wild pack. See with your animal eyes and hear with your animal ears.
         </p>
 
         <a

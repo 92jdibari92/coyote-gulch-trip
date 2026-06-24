@@ -2,7 +2,7 @@ const stats = [
   { label: "Location", value: "Coyote Gulch, Utah", sub: "Grand Staircase–Escalante NM" },
   { label: "Dates", value: "Nov 1–8, 2026", sub: "7 nights in the backcountry" },
   { label: "Distance", value: "~42 Miles", sub: "Roundtrip through the canyon" },
-  { label: "Group Size", value: "8 Men", sub: "Limited. No passenger seats." },
+  { label: "Group Size", value: "8 Men", sub: "Limited spots available." },
 ];
 
 export default function TripStats() {
