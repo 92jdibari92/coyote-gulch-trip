@@ -4,7 +4,7 @@ export default function FireBreak() {
   return (
     <div className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">
       <Image
-        src="/fire.jpg"
+        src="/fire.JPG"
         alt="Campfire in the canyon at night"
         fill
         className="object-cover object-center"
