@@ -2,26 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    /* Dark earthy canyon theme */
+    --background: 28 28% 4%;
+    --foreground: 38 28% 88%;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    --card: 28 25% 7%;
+    --card-foreground: 38 28% 88%;
+
+    --popover: 28 25% 7%;
+    --popover-foreground: 38 28% 88%;
+
+    --primary: 32 55% 50%;
+    --primary-foreground: 28 28% 4%;
+
+    --secondary: 28 20% 12%;
+    --secondary-foreground: 38 20% 80%;
+
+    --muted: 28 18% 10%;
+    --muted-foreground: 35 14% 45%;
+
+    --accent: 32 55% 50%;
+    --accent-foreground: 28 28% 4%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 38 28% 88%;
+
+    --border: 28 20% 15%;
+    --input: 28 18% 10%;
+    --ring: 32 55% 50%;
+
+    --radius: 0.25rem;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .font-display {
+    font-family: var(--font-display), Georgia, serif;
   }
 }
