@@ -247,16 +247,31 @@ export default function ApplicationForm() {
     setLoading(true);
     setServerError(null);
 
-    const { error: sbErr } = await supabase.from("applications").insert({
+    const payload = {
       ...form,
       physical_limitations: form.physical_limitations || null,
       dietary_restrictions: form.dietary_restrictions || null,
       anything_else: form.anything_else || null,
-    });
+    };
+
+    console.log("[Submit] Sending payload:", payload);
+    console.log("[Submit] Payload keys:", Object.keys(payload));
+
+    const { data, error: sbErr } = await supabase
+      .from("applications")
+      .insert(payload)
+      .select();
+
+    console.log("[Submit] Response data:", data);
+    console.log("[Submit] Response error:", sbErr);
 
     if (sbErr) {
+      console.error("[Submit] Error code:", sbErr.code);
+      console.error("[Submit] Error message:", sbErr.message);
+      console.error("[Submit] Error details:", sbErr.details);
+      console.error("[Submit] Error hint:", sbErr.hint);
       setServerError(
-        "Something went wrong submitting your application. Please try again or email us directly."
+        `Submission failed: ${sbErr.message}${sbErr.hint ? ` — ${sbErr.hint}` : ""}`
       );
       setLoading(false);
       return;
