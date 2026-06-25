@@ -83,6 +83,17 @@ export default function Hero() {
         </a>
       </div>
 
+      {/* Logo watermark — bottom right */}
+      <div className="absolute bottom-6 right-8 md:bottom-8 md:right-10 z-10 pointer-events-none">
+        <Image
+          src="/Trails logo.PNG"
+          alt="Trails of Transformation"
+          width={120}
+          height={40}
+          className="w-[80px] md:w-[120px] h-auto object-contain opacity-[0.70]"
+        />
+      </div>
+
       {/* Scroll hint */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30 z-10">
         <div className="w-px h-12 bg-foreground/40 animate-pulse" />
