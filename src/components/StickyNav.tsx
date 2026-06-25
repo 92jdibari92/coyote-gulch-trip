@@ -44,15 +44,20 @@ export default function StickyNav() {
       >
         <div className="max-w-[90rem] mx-auto px-6 md:px-12 h-14 flex items-center justify-between gap-4">
 
-          {/* Logo */}
-          <Image
-            src="/Trails logo.PNG"
-            alt="Trails"
-            width={120}
-            height={32}
-            className="h-7 w-auto object-contain opacity-85"
-            priority
-          />
+          {/* Logo + name */}
+          <div className="flex items-center gap-3 shrink-0">
+            <Image
+              src="/Trails logo.PNG"
+              alt="Trails"
+              width={120}
+              height={32}
+              className="h-7 w-auto object-contain opacity-85"
+              priority
+            />
+            <span className="font-display text-sm text-foreground/40 leading-none hidden sm:block">
+              Trails of Transformation
+            </span>
+          </div>
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-1">

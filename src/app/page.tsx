@@ -25,7 +25,7 @@ export default function Home() {
       <ApplyForm />
 
       <footer className="border-t border-border py-14 px-8 md:px-16">
-        <div className="max-w-[90rem] mx-auto flex flex-col items-center gap-6">
+        <div className="max-w-[90rem] mx-auto flex flex-col items-center gap-4">
           <Image
             src="/Trails logo.PNG"
             alt="Trails"
@@ -33,6 +33,9 @@ export default function Home() {
             height={44}
             className="h-10 w-auto object-contain opacity-70"
           />
+          <span className="font-display text-base text-foreground/35 leading-none">
+            Trails of Transformation
+          </span>
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
             <span className="text-foreground/25 font-sans text-xs tracking-[0.2em] uppercase">
               Coyote Gulch Expedition &nbsp;·&nbsp; 2026
