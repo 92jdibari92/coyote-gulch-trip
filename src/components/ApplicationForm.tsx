@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { supabase } from "@/lib/supabase";
+import { useEffect, useState } from "react";
+import { supabase, supabaseConfigured } from "@/lib/supabase";
 
 /* ─── Types ─────────────────────────────────────────────────────── */
 
@@ -209,6 +209,31 @@ export default function ApplicationForm() {
   const [submitted, setSubmitted] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
 
+  // Connection test — runs once on mount, visible in DevTools console
+  useEffect(() => {
+    if (!supabaseConfigured) {
+      console.error("[Supabase] Skipping connection test — env vars not configured.");
+      return;
+    }
+    console.log("[Supabase] Running connection test against 'applications' table…");
+    supabase
+      .from("applications")
+      .select("id")
+      .limit(0)
+      .then(({ error }) => {
+        if (error) {
+          console.error("[Supabase] Connection test FAILED:", {
+            code: error.code,
+            message: error.message,
+            details: error.details,
+            hint: error.hint,
+          });
+        } else {
+          console.log("[Supabase] Connection test PASSED — table is reachable.");
+        }
+      });
+  }, []);
+
   function set(field: keyof FormData, value: string) {
     setForm((prev) => ({ ...prev, [field]: value }));
     if (errors[field]) setErrors((prev) => ({ ...prev, [field]: undefined }));
@@ -244,6 +269,14 @@ export default function ApplicationForm() {
       return;
     }
 
+    if (!supabaseConfigured) {
+      setServerError(
+        "Supabase is not configured. NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_ANON_KEY " +
+        "is missing — restart the dev server after adding them to .env.local."
+      );
+      return;
+    }
+
     setLoading(true);
     setServerError(null);
 
@@ -257,12 +290,12 @@ export default function ApplicationForm() {
     console.log("[Submit] Sending payload:", payload);
     console.log("[Submit] Payload keys:", Object.keys(payload));
 
-    const { data, error: sbErr } = await supabase
+    const { data: insertedRows, error: sbErr } = await supabase
       .from("applications")
       .insert(payload)
       .select();
 
-    console.log("[Submit] Response data:", data);
+    console.log("[Submit] Response data:", insertedRows);
     console.log("[Submit] Response error:", sbErr);
 
     if (sbErr) {
