@@ -25,7 +25,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Coyote Gulch 2026 | Men's Backpacking Expedition",
   description:
-    "Seven days in the ancient canyons of southern Utah. A men's backpacking expedition through Coyote Gulch — November 1–8, 2026.",
+    "Seven days in the ancient canyons of southern Utah. A men's backpacking expedition through Coyote Gulch — November 7–14, 2026.",
 };
 
 export default function RootLayout({

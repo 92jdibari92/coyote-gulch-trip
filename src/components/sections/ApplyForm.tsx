@@ -27,7 +27,7 @@ export default function ApplyForm() {
             and we will be in touch within five days.
           </p>
           <p className="text-foreground/25 font-sans text-sm">
-            November 1–8, 2026 &nbsp;·&nbsp; Grand Staircase–Escalante, Utah
+            November 7–14, 2026 &nbsp;·&nbsp; Grand Staircase–Escalante, Utah
             &nbsp;·&nbsp; Applications close October 1st or when spots fill.
           </p>
         </div>

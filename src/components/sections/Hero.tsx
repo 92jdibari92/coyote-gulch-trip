@@ -59,7 +59,7 @@ export default function Hero() {
       {/* Main content — bottom-anchored */}
       <div className="relative z-10 px-8 md:px-16 lg:px-24 pb-20 md:pb-28 max-w-[90rem] w-full">
         <p className="text-[#c4813d] text-xs tracking-[0.35em] uppercase font-sans mb-8">
-          November 1–8 &nbsp;·&nbsp; Grand Staircase–Escalante, Utah &nbsp;·&nbsp; Men&apos;s Expedition
+          November 7–14 &nbsp;·&nbsp; Grand Staircase–Escalante, Utah &nbsp;·&nbsp; Men&apos;s Expedition
         </p>
 
         <h1 className="font-display text-[clamp(3.5rem,10vw,9rem)] leading-[0.92] tracking-tight text-foreground mb-8">
