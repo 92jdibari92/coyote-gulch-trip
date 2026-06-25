@@ -16,7 +16,7 @@ const MapClient = dynamic(() => import("./MapClient"), {
 
 export default function MapSection() {
   return (
-    <section className="border-t border-border py-28 md:py-40">
+    <section id="the-canyon" className="border-t border-border py-28 md:py-40">
       <div className="px-8 md:px-16 lg:px-24 max-w-[90rem] mx-auto">
         {/* Header */}
         <div className="mb-12 grid md:grid-cols-2 gap-8 items-end">

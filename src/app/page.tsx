@@ -1,3 +1,4 @@
+import StickyNav from "@/components/StickyNav";
 import Hero from "@/components/sections/Hero";
 import TripStats from "@/components/sections/TripStats";
 import Experience from "@/components/sections/Experience";
@@ -11,6 +12,7 @@ import ApplyForm from "@/components/sections/ApplyForm";
 export default function Home() {
   return (
     <main>
+      <StickyNav />
       <Hero />
       <TripStats />
       <Experience />

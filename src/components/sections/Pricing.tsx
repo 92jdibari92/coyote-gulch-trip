@@ -24,7 +24,7 @@ const TIERS = [
 
 export default function Pricing() {
   return (
-    <section className="border-t border-border py-28 md:py-40 px-8 md:px-16 lg:px-24">
+    <section id="investment" className="border-t border-border py-28 md:py-40 px-8 md:px-16 lg:px-24">
       <div className="max-w-[72rem] mx-auto">
 
         {/* Header */}
