@@ -5,29 +5,30 @@ import L from "leaflet";
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-const AMBER = "#c4813d";
+// Darker burnt sienna — high contrast on the light OSM base map
+const TRAIL_COLOR = "#8B3A0F";
 const CENTER: [number, number] = [37.41, -111.065];
 
-function amberDotIcon() {
+function markerIcon() {
   return L.divIcon({
     className: "",
     html: `<span style="
-      display:block;width:10px;height:10px;
-      background:${AMBER};border-radius:50%;
-      border:1.5px solid rgba(196,129,61,0.5);
-      box-shadow:0 0 0 3px rgba(196,129,61,0.12),0 0 10px rgba(196,129,61,0.35)
+      display:block;width:12px;height:12px;
+      background:${TRAIL_COLOR};border-radius:50%;
+      border:2px solid #fff;
+      box-shadow:0 1px 4px rgba(0,0,0,0.45)
     "></span>`,
-    iconSize: [10, 10],
-    iconAnchor: [5, 5],
+    iconSize: [12, 12],
+    iconAnchor: [6, 6],
     popupAnchor: [0, -10],
   });
 }
 
 function trailStyle(): L.PathOptions {
   return {
-    color: AMBER,
-    weight: 2.5,
-    opacity: 0.8,
+    color: TRAIL_COLOR,
+    weight: 3,
+    opacity: 0.9,
     lineCap: "round",
     lineJoin: "round",
   };
@@ -49,7 +50,7 @@ function onEachFeature(feature: any, layer: L.Layer) {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function pointToLayer(_feature: any, latlng: L.LatLng): L.Layer {
-  return L.marker(latlng, { icon: amberDotIcon() });
+  return L.marker(latlng, { icon: markerIcon() });
 }
 
 export default function MapClient() {
@@ -65,12 +66,12 @@ export default function MapClient() {
     <MapContainer
       center={CENTER}
       zoom={12}
-      style={{ height: "100%", width: "100%", background: "#0d0a07" }}
+      style={{ height: "100%", width: "100%", background: "#e8e0d4" }}
       scrollWheelZoom={false}
     >
       <TileLayer
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
       {geoData && (
         <GeoJSON

@@ -41,13 +41,13 @@ export default function MapSection() {
           {/* Legend */}
           <div className="absolute bottom-4 left-4 z-[1000] bg-background/90 border border-border px-4 py-3 flex flex-col gap-2">
             <div className="flex items-center gap-3">
-              <div className="w-5 h-[2px] bg-[#c4813d] rounded-full flex-shrink-0" />
+              <div className="w-5 h-[2px] bg-[#8B3A0F] rounded-full flex-shrink-0" />
               <span className="text-foreground/50 font-sans text-[0.6rem] tracking-[0.25em] uppercase">
                 Trail Route
               </span>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#c4813d] flex-shrink-0" />
+              <div className="w-2.5 h-2.5 rounded-full bg-[#8B3A0F] flex-shrink-0" />
               <span className="text-foreground/50 font-sans text-[0.6rem] tracking-[0.25em] uppercase">
                 Landmark
               </span>
