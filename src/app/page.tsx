@@ -5,6 +5,7 @@ import MapSection from "@/components/sections/MapSection";
 import FireBreak from "@/components/sections/FireBreak";
 import Included from "@/components/sections/Included";
 import Guides from "@/components/sections/Guides";
+import Pricing from "@/components/sections/Pricing";
 import ApplyForm from "@/components/sections/ApplyForm";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <FireBreak />
       <Included />
       <Guides />
+      <Pricing />
       <ApplyForm />
 
       <footer className="border-t border-border py-10 px-8 md:px-16">
