@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import TripStats from "@/components/sections/TripStats";
 import Experience from "@/components/sections/Experience";
+import MapSection from "@/components/sections/MapSection";
 import FireBreak from "@/components/sections/FireBreak";
 import Included from "@/components/sections/Included";
 import Guides from "@/components/sections/Guides";
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <TripStats />
       <Experience />
+      <MapSection />
       <FireBreak />
       <Included />
       <Guides />
