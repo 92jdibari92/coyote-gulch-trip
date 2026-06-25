@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const LINKS = [
   { label: "The Trip",    href: "#the-trip"    },
@@ -43,10 +44,15 @@ export default function StickyNav() {
       >
         <div className="max-w-[90rem] mx-auto px-6 md:px-12 h-14 flex items-center justify-between gap-4">
 
-          {/* Wordmark */}
-          <span className="font-display text-sm text-foreground/40 shrink-0">
-            Coyote Gulch
-          </span>
+          {/* Logo */}
+          <Image
+            src="/Trails logo.PNG"
+            alt="Trails"
+            width={120}
+            height={32}
+            className="h-7 w-auto object-contain opacity-85"
+            priority
+          />
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-1">
