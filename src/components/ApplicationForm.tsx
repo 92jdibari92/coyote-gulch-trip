@@ -281,28 +281,42 @@ export default function ApplicationForm() {
     setServerError(null);
 
     const payload = {
-      ...form,
-      physical_limitations: form.physical_limitations || null,
-      dietary_restrictions: form.dietary_restrictions || null,
-      anything_else: form.anything_else || null,
+      // THE BASICS
+      full_name:              form.full_name,
+      age:                    form.age,
+      city_state:             form.city_state,
+      email:                  form.email,
+      phone:                  form.phone,
+      heard_about_us:         form.heard_about_us,
+      // PHYSICAL READINESS
+      fitness_level:          form.fitness_level,
+      backpacking_experience: form.backpacking_experience,
+      mileage_comfortable:    form.mileage_comfortable,
+      physical_limitations:   form.physical_limitations   || null,
+      // WHY YOU'RE HERE
+      what_drew_you:          form.what_drew_you,
+      hoping_to_gain:         form.hoping_to_gain,
+      life_connection:        form.life_connection,
+      // WHO YOU ARE
+      how_others_describe:    form.how_others_describe,
+      brotherhood_meaning:    form.brotherhood_meaning,
+      rite_of_passage:        form.rite_of_passage,
+      what_you_bring:         form.what_you_bring,
+      // LOGISTICS
+      has_gear:               form.has_gear,
+      transportation:         form.transportation,
+      dietary_restrictions:   form.dietary_restrictions   || null,
+      investment_tier:        form.investment_tier,
+      // FINAL
+      anything_else:          form.anything_else           || null,
     };
 
-    console.log("[Submit] Sending payload:", payload);
-    console.log("[Submit] Payload keys:", Object.keys(payload));
-
-    const { data: insertedRows, error: sbErr } = await supabase
+    const { error: sbErr } = await supabase
       .from("applications")
-      .insert(payload)
-      .select();
-
-    console.log("[Submit] Response data:", insertedRows);
-    console.log("[Submit] Response error:", sbErr);
+      .insert(payload);
 
     if (sbErr) {
-      console.error("[Submit] Error code:", sbErr.code);
-      console.error("[Submit] Error message:", sbErr.message);
-      console.error("[Submit] Error details:", sbErr.details);
-      console.error("[Submit] Error hint:", sbErr.hint);
+      console.error("[Supabase insert error]", sbErr);
       setServerError(
         `Submission failed: ${sbErr.message}${sbErr.hint ? ` — ${sbErr.hint}` : ""}`
       );
