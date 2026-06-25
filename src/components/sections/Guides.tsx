@@ -7,7 +7,7 @@ const guides = [
   },
   {
     name: "Grant Lindholm",
-    title: "Wilderness Guide",
+    title: "Trip Leader",
     description:
       "Grant on the route, what it demands, and what you need to know before you lace up your boots.",
   },
