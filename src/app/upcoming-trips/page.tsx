@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import UpcomingTripsForm from "@/components/UpcomingTripsForm";
+import UpcomingTripsNav from "@/components/UpcomingTripsNav";
 
 export const metadata: Metadata = {
   title: "Upcoming Expeditions | Trails of Transformation",
@@ -258,33 +259,17 @@ export default function UpcomingTripsPage() {
   return (
     <main className="min-h-screen bg-background">
 
+      <UpcomingTripsNav />
+
       {/* Hero */}
       <section
-        className="relative flex flex-col min-h-[65vh] px-8 md:px-16 lg:px-24 pt-8 pb-20 md:pb-32"
+        className="relative flex flex-col items-center justify-center min-h-[65vh] px-8 md:px-16 lg:px-24 pt-20 pb-20 md:pb-28"
         style={{
           background:
             "radial-gradient(ellipse 70% 60% at 50% 100%, rgba(120, 55, 8, 0.18) 0%, transparent 70%), " +
             "hsl(28, 28%, 4%)",
         }}
       >
-        {/* Top bar: back link + logo */}
-        <div className="flex items-center justify-between mb-auto pb-16 md:pb-24">
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-foreground/35 hover:text-foreground/70 font-sans text-[0.7rem] tracking-[0.15em] uppercase transition-colors duration-150"
-          >
-            <span>←</span>
-            <span>Back to Coyote Gulch</span>
-          </Link>
-          <Image
-            src="/Trails logo.PNG"
-            alt="Trails of Transformation"
-            width={120}
-            height={32}
-            className="h-7 w-auto object-contain opacity-60"
-          />
-        </div>
-
         {/* Centered heading */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
           <p className="text-[#c4813d] text-[0.65rem] tracking-[0.4em] uppercase font-sans mb-6">
