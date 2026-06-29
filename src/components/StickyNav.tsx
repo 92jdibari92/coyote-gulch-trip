@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const LINKS = [
-  { label: "The Trip",    href: "#the-trip"    },
-  { label: "The Canyon",  href: "#the-canyon"  },
-  { label: "Your Guides", href: "#your-guides" },
-  { label: "Investment",  href: "#investment"  },
-  { label: "Podcast",     href: "#podcast"     },
+  { label: "The Trip",       href: "#the-trip"        },
+  { label: "The Canyon",     href: "#the-canyon"      },
+  { label: "Your Guides",    href: "#your-guides"     },
+  { label: "Investment",     href: "#investment"      },
+  { label: "Podcast",        href: "#podcast"         },
+  { label: "Upcoming Trips", href: "/upcoming-trips"  },
 ];
 
 export default function StickyNav() {
