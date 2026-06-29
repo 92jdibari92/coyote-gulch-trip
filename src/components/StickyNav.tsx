@@ -8,6 +8,7 @@ const LINKS = [
   { label: "The Canyon",  href: "#the-canyon"  },
   { label: "Your Guides", href: "#your-guides" },
   { label: "Investment",  href: "#investment"  },
+  { label: "Podcast",     href: "#podcast"     },
 ];
 
 export default function StickyNav() {
