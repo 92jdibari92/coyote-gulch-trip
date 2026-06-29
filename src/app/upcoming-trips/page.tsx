@@ -50,8 +50,6 @@ interface Trip {
   description: string;
   highlights: string[];
   itinerary: string[];
-  imagePosition?: string;
-  imageScale?: number;
 }
 
 const GUADALUPE: Trip = {
@@ -63,8 +61,6 @@ const GUADALUPE: Trip = {
   difficulty: "Moderately Challenging",
   image: "https://static.showit.co/1200/bZMhPo2tSiGVn4lH213YXA/223164/img_0489.jpg",
   imageAlt: "Guadalupe Mountains canyon and high country landscape",
-  imagePosition: "center 35%",
-  imageScale: 0.88,
   description:
     "Guadalupe Mountains National Park is home to the world's most extensive Permian fossil reef, the four highest points in Texas, and various ecosystems waiting to be explored. From forested mountains and desert dunes, Guadalupe Mountains offer various ways to explore through hours of hiking and backpacking trails — and some of the most dramatic skies in the American Southwest.",
   highlights: [
@@ -127,13 +123,6 @@ function TripSection({ trip }: { trip: Trip }) {
           alt={trip.imageAlt}
           fill
           className="object-cover"
-          style={{
-            objectPosition: trip.imagePosition ?? "center",
-            ...(trip.imageScale !== undefined && {
-              transform: `scale(${trip.imageScale})`,
-              transformOrigin: "center center",
-            }),
-          }}
           sizes="100vw"
           priority={trip.id === "guadalupe"}
         />
