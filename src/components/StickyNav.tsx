@@ -120,7 +120,7 @@ export default function StickyNav() {
           className={[
             "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
             "border-t border-border bg-[#0d0a07]",
-            menuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0",
+            menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
           ].join(" ")}
         >
           <div className="flex flex-col px-6 py-3">
