@@ -4,7 +4,7 @@ const guides = [
     title: "Trip Leader",
     description:
       "Hear from John on what to expect, how the trip came together, and why Coyote Gulch in November.",
-    video: "/Audio_tweak.mp4",
+    youtube: "https://www.youtube.com/embed/XEjxXvAFqx8",
   },
   {
     name: "Grant Lindholm",
@@ -20,15 +20,15 @@ const guides = [
   },
 ];
 
-function VideoPlayer({ src }: { src: string }) {
+function YouTubeEmbed({ src, title }: { src: string; title: string }) {
   return (
     <div className="relative w-full aspect-video bg-[oklch(0.06_0.009_57)] border border-border overflow-hidden">
-      <video
+      <iframe
         src={src}
-        controls
-        autoPlay={false}
-        preload="metadata"
-        className="w-full h-full object-cover"
+        title={title}
+        className="absolute inset-0 w-full h-full"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
       />
     </div>
   );
@@ -83,8 +83,8 @@ export default function Guides() {
               key={guide.name}
               className="bg-background flex flex-col"
             >
-              {guide.video ? (
-                <VideoPlayer src={guide.video} />
+              {guide.youtube ? (
+                <YouTubeEmbed src={guide.youtube} title={guide.name} />
               ) : (
                 <VideoPlaceholder label="Video coming soon" />
               )}
