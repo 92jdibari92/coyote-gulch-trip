@@ -4,6 +4,7 @@ const guides = [
     title: "Trip Leader",
     description:
       "Hear from John on what to expect, how the trip came together, and why Coyote Gulch in November.",
+    video: "/Audio_tweak.mp4",
   },
   {
     name: "Grant Lindholm",
@@ -18,6 +19,20 @@ const guides = [
       "A full overview of the expedition — the canyon, the itinerary, and what this week is really about.",
   },
 ];
+
+function VideoPlayer({ src }: { src: string }) {
+  return (
+    <div className="relative w-full aspect-video bg-[oklch(0.06_0.009_57)] border border-border overflow-hidden">
+      <video
+        src={src}
+        controls
+        autoPlay={false}
+        preload="metadata"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  );
+}
 
 function VideoPlaceholder({ label }: { label: string }) {
   return (
@@ -68,7 +83,11 @@ export default function Guides() {
               key={guide.name}
               className="bg-background flex flex-col"
             >
-              <VideoPlaceholder label="Video coming soon" />
+              {guide.video ? (
+                <VideoPlayer src={guide.video} />
+              ) : (
+                <VideoPlaceholder label="Video coming soon" />
+              )}
               <div className="p-7 flex flex-col gap-2 border-t border-border">
                 <h3 className="font-display text-xl text-foreground leading-snug">
                   {guide.name}
