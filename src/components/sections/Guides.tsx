@@ -4,7 +4,7 @@ const guides = [
     title: "Trip Leader",
     description:
       "Hear from John on what to expect, how the trip came together, and why Coyote Gulch in November.",
-    youtube: "https://www.youtube.com/embed/XEjxXvAFqx8",
+    youtube: "https://www.youtube.com/embed/fFEzQOM2YMo",
   },
   {
     name: "Grant Lindholm",
