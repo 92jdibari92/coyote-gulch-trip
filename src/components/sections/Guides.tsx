@@ -11,6 +11,7 @@ const guides = [
     title: "Trip Leader",
     description:
       "Grant on the route, what it demands, and what you need to know before you lace up your boots.",
+    youtube: "https://www.youtube.com/embed/unqcUi9L-ao",
   },
   {
     name: "The Trip",
