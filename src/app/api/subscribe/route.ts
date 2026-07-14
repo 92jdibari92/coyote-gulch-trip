@@ -25,8 +25,8 @@ const CONFIRMATION_EMAIL_HTML = `<!DOCTYPE html>
 <tr>
 <td style="padding:48px 40px 40px;">
 <p style="margin:0 0 28px;color:#f5f0e8;font-family:Georgia,serif;font-size:18px;line-height:1.8;">You&rsquo;re on the list.</p>
-<p style="margin:0 0 28px;color:#f5f0e8;font-family:Georgia,serif;font-size:18px;line-height:1.8;">We run a handful of expeditions a year &mdash; Coyote Gulch, Guadalupe Mountains, Big Bend, and what&rsquo;s next. Spots are limited, and every application is reviewed personally.</p>
-<p style="margin:0;color:#f5f0e8;font-family:Georgia,serif;font-size:18px;line-height:1.8;">When the next one opens, you&rsquo;ll hear from us directly &mdash; before it goes public.</p>
+<p style="margin:0 0 28px;color:#f5f0e8;font-family:Georgia,serif;font-size:18px;line-height:1.8;">We run a handful of expeditions a year. Spots are limited, and every application is reviewed personally.</p>
+<p style="margin:0;color:#f5f0e8;font-family:Georgia,serif;font-size:18px;line-height:1.8;">When the next one opens, you&rsquo;ll hear from us directly — before it goes public. If you&rsquo;re interested in a specific trip or bringing a private group, email us at <a href="mailto:explore@trailsoftransformation.co" style="color:#c4813d;">explore@trailsoftransformation.co</a>.</p>
 </td>
 </tr>
 <tr>
