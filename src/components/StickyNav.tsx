@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const LINKS = [
   { label: "The Trip",       href: "#the-trip"        },
@@ -47,7 +48,7 @@ export default function StickyNav() {
         <div className="max-w-[90rem] mx-auto px-6 md:px-12 h-14 flex items-center justify-between gap-4">
 
           {/* Logo + name */}
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0 min-w-0">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 shrink-0 min-w-0">
             <Image
               src="/Trails logo.PNG"
               alt="Trails"
@@ -59,7 +60,7 @@ export default function StickyNav() {
             <span className="font-display text-[11px] sm:text-sm text-foreground/40 leading-none truncate">
               Trails of Transformation
             </span>
-          </div>
+          </Link>
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-1">
