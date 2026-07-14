@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import UpcomingTripsForm from "@/components/UpcomingTripsForm";
 import UpcomingTripsNav from "@/components/UpcomingTripsNav";
+import StayInTouch from "@/components/sections/StayInTouch";
 
 export const metadata: Metadata = {
   title: "Upcoming Expeditions | Trails of Transformation",
@@ -321,6 +322,8 @@ export default function UpcomingTripsPage() {
           <UpcomingTripsForm />
         </div>
       </section>
+
+      <StayInTouch />
 
       {/* Footer */}
       <footer className="border-t border-border py-14 px-8 md:px-16">
