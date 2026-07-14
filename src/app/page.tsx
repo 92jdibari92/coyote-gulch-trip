@@ -10,6 +10,7 @@ import Guides from "@/components/sections/Guides";
 import Pricing from "@/components/sections/Pricing";
 import ApplyForm from "@/components/sections/ApplyForm";
 import Podcast from "@/components/sections/Podcast";
+import StayInTouch from "@/components/sections/StayInTouch";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Pricing />
       <ApplyForm />
       <Podcast />
+      <StayInTouch />
 
       <footer className="border-t border-border py-14 px-8 md:px-16">
         <div className="max-w-[90rem] mx-auto flex flex-col items-center gap-4">
