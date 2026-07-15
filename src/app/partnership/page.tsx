@@ -449,6 +449,86 @@ export default function PartnershipPage() {
         </div>
       </section>
 
+      {/* ── A Gap Worth Filling ──────────────────────────────────── */}
+      <section
+        id="gap-worth-filling"
+        className="relative border-y border-[#c4813d]/25 py-24 md:py-40 px-8 md:px-16 lg:px-24 overflow-hidden"
+        style={{ background: "hsl(28, 30%, 3%)" }}
+      >
+        {/* Grain texture — sets this section apart from its neighbors */}
+        <div
+          className="absolute inset-0 opacity-[0.035] pointer-events-none"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E\")",
+            backgroundSize: "200px 200px",
+          }}
+        />
+
+        {/* Top and bottom accent lines */}
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c4813d]/50 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c4813d]/50 to-transparent" />
+
+        <div className="relative z-10 max-w-[52rem] mx-auto">
+          <p className="text-[#c4813d] text-[0.65rem] tracking-[0.35em] uppercase font-sans mb-6">
+            A Gap Worth Filling
+          </p>
+          <h2 className="font-display text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] text-[#c4813d] mb-10">
+            A Gap Worth Filling.
+          </h2>
+
+          <div className="flex flex-col gap-6 text-foreground/65 font-sans text-base md:text-lg leading-relaxed">
+            <p>
+              Austin has exceptional addiction treatment. The Last Resort
+              Recovery. Heartwood Recovery. The Arbor. Driftwood Courageous
+              Recovery. These are serious programs doing serious work, and
+              the men who pass through their doors are fortunate to have
+              them.
+            </p>
+            <p>
+              What none of them offer — what no treatment center in Austin
+              currently offers — is this: a structured, multi-day
+              backcountry wilderness expedition as part of a man&apos;s
+              continuum of care.
+            </p>
+            <p>
+              Equine therapy. Music therapy. Ropes courses. On-site hiking
+              trails. These are powerful tools, and they belong in
+              treatment. But they all share one limitation: they happen on
+              campus. The wilderness they offer is managed, contained, and
+              within walking distance of a clinical building.
+            </p>
+            <p>
+              What happens when you take a man forty miles into canyon
+              country with nothing but what he can carry? When there is no
+              campus to retreat to, no phone to reach for, no performance to
+              maintain? When the only thing between him and the stars is a
+              tent he put up himself?
+            </p>
+            <p>
+              Something shifts. Something that cannot be replicated on a
+              ropes course or in a therapy room or on a ranch in South
+              Austin. The research confirms it. The men who have done it
+              confirm it. And we confirm it — because we have lived it.
+            </p>
+            <p>
+              Trails of Transformation is not a treatment center. We are not
+              trying to be. We are the thing that happens after the clinical
+              work has begun — the experience that reaches the parts that
+              treatment alone cannot touch. We are the missing piece in
+              Austin&apos;s continuum of care.
+            </p>
+            <p className="text-foreground/80">
+              We are actively seeking 2 to 3 founding partner organizations
+              who want to be the first in this city to offer their clients
+              something no one else can. The organizations that say yes to
+              this will be doing something genuinely new — and genuinely
+              powerful — for the men in their care.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ── Partnership Model ───────────────────────────────────── */}
       <section id="partnership-model" className="border-t border-border py-24 md:py-36 px-8 md:px-16 lg:px-24">
         <div className="max-w-[90rem] mx-auto">
