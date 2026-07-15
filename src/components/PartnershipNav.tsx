@@ -119,7 +119,7 @@ export default function PartnershipNav() {
           className={[
             "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
             "border-t border-border bg-[#0d0a07]",
-            menuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0",
+            menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
           ].join(" ")}
         >
           <div className="flex flex-col px-6 py-3">
@@ -128,7 +128,7 @@ export default function PartnershipNav() {
                 key={link.href}
                 href={link.href}
                 onClick={close}
-                className="text-foreground/50 hover:text-foreground/85 font-sans text-[0.75rem] tracking-[0.18em] uppercase py-3.5 border-b border-border/50 last:border-0 transition-colors duration-150"
+                className="text-foreground/50 hover:text-foreground/85 font-sans text-[0.75rem] tracking-[0.18em] uppercase py-3.5 border-b border-border/50 transition-colors duration-150"
               >
                 {link.label}
               </a>
@@ -136,7 +136,7 @@ export default function PartnershipNav() {
             <a
               href="#contact"
               onClick={close}
-              className="text-[#c4813d] hover:text-[#d4924e] font-sans text-[0.75rem] tracking-[0.18em] uppercase py-3.5 transition-colors duration-150"
+              className="mt-4 mb-2 text-center shrink-0 bg-[#c4813d] hover:bg-[#d4924e] text-[#0d0905] font-sans font-semibold text-[0.7rem] tracking-[0.15em] uppercase px-4 py-3 transition-colors duration-150"
             >
               Request a Conversation
             </a>
