@@ -398,11 +398,6 @@ export default function PartnershipPage() {
                   That is why I built Trails of Transformation. Not as a
                   program. As an answer to something I have lived.
                 </p>
-                <p>
-                  I believe in this work the way I believe in water —
-                  because I know what it is to be thirsty, and I know what
-                  it is to finally drink.
-                </p>
               </div>
 
               <blockquote className="border-l-2 border-[#c4813d] pl-6 md:pl-8 py-2">
