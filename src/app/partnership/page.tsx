@@ -16,21 +16,25 @@ const PILLARS = [
     n: "01",
     title: "Nature Immersion",
     body: "Carrying only what you need. Moving through landscape that is indifferent to your history and honest about what you are made of. The wilderness has a way of stripping away performance and revealing what is true.",
+    image: "https://static.showit.co/1200/s1tsl7HcSXqlOHMvJZsrIQ/223164/tezza-0668.jpg",
   },
   {
     n: "02",
     title: "Vulnerable Brotherhood",
     body: "Small groups of 6 to 8 men, guided intentionally through shared challenge and shared presence. Being witnessed in your struggle — and witnessing others in theirs — builds a quality of trust and connection that transforms how men understand themselves and each other.",
+    image: "/hero.jpeg",
   },
   {
     n: "03",
     title: "Inner Wilderness Exploration",
     body: "The external journey mirrors the internal one. As men navigate terrain, they navigate themselves. Facilitated reflection, honest conversation around the fire, and intentional silence create space for insight, grief, and breakthrough.",
+    image: "/Cooking.jpg",
   },
   {
     n: "04",
     title: "Embodied Healing",
     body: "Physical challenge, time in nature, and the absence of digital distraction recalibrate the nervous system in ways that extend long beyond the trip itself. Men return different — not because something was added, but because something was remembered.",
+    image: "https://static.showit.co/1200/bZMhPo2tSiGVn4lH213YXA/223164/img_0489.jpg",
   },
 ];
 
@@ -210,6 +214,21 @@ export default function PartnershipPage() {
         </div>
       </section>
 
+      {/* ── Expedition Photo ─────────────────────────────────────── */}
+      <div className="relative w-full h-[500px] border-t border-border">
+        <Image
+          src="/email-photo.JPG"
+          alt="Coyote Gulch canyon landscape from a previous Trails of Transformation expedition"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[#0d0a07]/20" />
+      </div>
+      <p className="bg-background text-center italic text-foreground/40 font-sans text-sm py-6 px-8">
+        Coyote Gulch, Utah — a previous Trails of Transformation expedition.
+      </p>
+
       {/* ── What We Offer ───────────────────────────────────────── */}
       <section id="what-we-offer" className="bg-[oklch(0.095_0.013_57)] border-t border-border py-24 md:py-36">
         <div className="px-8 md:px-16 lg:px-24 max-w-[90rem] mx-auto">
@@ -233,15 +252,26 @@ export default function PartnershipPage() {
             {PILLARS.map((p) => (
               <div
                 key={p.n}
-                className="bg-[oklch(0.095_0.013_57)] hover:bg-[oklch(0.12_0.016_57)] transition-colors duration-300 p-8 md:p-10 flex flex-col gap-4"
+                className="bg-[oklch(0.095_0.013_57)] hover:bg-[oklch(0.12_0.016_57)] transition-colors duration-300 flex flex-col"
               >
-                <span className="font-mono text-[#c4813d]/40 text-xs">{p.n}</span>
-                <h3 className="font-display text-xl md:text-2xl text-foreground leading-snug">
-                  {p.title}
-                </h3>
-                <p className="text-foreground/45 font-sans text-sm leading-relaxed">
-                  {p.body}
-                </p>
+                <div className="relative w-full h-[200px] rounded-t-sm overflow-hidden">
+                  <Image
+                    src={p.image}
+                    alt={p.title}
+                    fill
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-8 md:p-10 flex flex-col gap-4">
+                  <span className="font-mono text-[#c4813d]/40 text-xs">{p.n}</span>
+                  <h3 className="font-display text-xl md:text-2xl text-foreground leading-snug">
+                    {p.title}
+                  </h3>
+                  <p className="text-foreground/45 font-sans text-sm leading-relaxed">
+                    {p.body}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -299,98 +329,114 @@ export default function PartnershipPage() {
 
       {/* ── This Is Personal ────────────────────────────────────── */}
       <section id="this-is-personal" className="bg-[oklch(0.095_0.013_57)] border-t border-border py-24 md:py-36 px-8 md:px-16 lg:px-24">
-        <div className="max-w-[52rem] mx-auto">
+        <div className="max-w-[70rem] mx-auto">
           <p className="text-[#c4813d] text-[0.65rem] tracking-[0.35em] uppercase font-sans mb-6">
             This Is Personal
           </p>
-          <h2 className="font-display text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] text-foreground mb-10">
+          <h2 className="font-display text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] text-foreground mb-12">
             This Is Personal.
           </h2>
 
-          <div className="flex flex-col gap-6 text-foreground/60 font-sans text-base md:text-lg leading-relaxed mb-12">
-            <p>
-              I know what addiction costs. I have paid some of that price
-              myself — and watched people I love pay the rest.
-            </p>
-            <p>
-              In my early twenties, I was asked to leave UT for two
-              semesters. I was kicked out of the dorms. I lost my job. I was
-              arrested. I woke up in a hospital. What I could not see then —
-              what addiction rarely lets you see — is that beneath the
-              drinking was a young man who had no idea who he was, what he
-              felt, or how to say any of it out loud.
-            </p>
-            <p>
-              It was outpatient treatment at La Hacienda, and backpacking,
-              that began to change that. Not because someone fixed me. But
-              because for the first time, I was in an environment that asked
-              something true of me — and gave me the space to respond
-              honestly.
-            </p>
-            <p>
-              My father drank throughout my childhood. I spent years holding
-              my breath, waiting for our family to fall apart, watching my
-              mother plead with him to stop. My uncle — the man I hunted and
-              fished with, whose laugh I can still hear — became addicted to
-              alcohol and pain medication. The damage he left behind still
-              moves through our family like a current. He died in an HEB,
-              alone, after falling and hitting his head.
-            </p>
-            <p>
-              Addiction does not stay in one person. It travels. It
-              inherits. It waits.
-            </p>
-            <p>
-              For six years I worked with Explore Austin — taking young men
-              from underserved communities in Austin into the wilderness,
-              from sixth grade through senior year of high school. I watched
-              boys who had never been seen as leaders become exactly that. I
-              watched confidence grow in real time, out on a trail, at the
-              edge of something hard and beautiful. I watched what happens
-              when a young man is witnessed by a safe, caring, present man —
-              and realizes for the first time that he is worth witnessing.
-            </p>
-            <p>
-              That is why I built Trails of Transformation. Not as a
-              program. As an answer to something I have lived.
-            </p>
-            <p>
-              I believe in this work the way I believe in water — because I
-              know what it is to be thirsty, and I know what it is to
-              finally drink.
-            </p>
-          </div>
-
-          <blockquote className="border-l-2 border-[#c4813d] pl-6 md:pl-8 py-2 mb-12">
-            <p className="font-display italic text-xl md:text-2xl text-foreground/75 leading-snug mb-4">
-              &ldquo;The wilderness does not fix you. It shows you that you
-              were never broken — only lost. And it gives you the landscape
-              to find your way back.&rdquo;
-            </p>
-            <cite className="not-italic text-foreground/35 font-sans text-xs tracking-[0.2em] uppercase">
-              — John Thomas di Bari
-            </cite>
-          </blockquote>
-
-          {/*
-            Video placeholder — swap for a real embed later, e.g.:
-            <div className="relative w-full aspect-video bg-[oklch(0.06_0.009_57)] border border-border overflow-hidden">
-              <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="John Thomas di Bari" className="absolute inset-0 w-full h-full" allowFullScreen />
+          <div className="grid md:grid-cols-[400px,1fr] gap-10 md:gap-14 items-start">
+            <div className="relative w-full max-w-[400px] h-[500px] rounded-lg overflow-hidden border border-[#c4813d]/20 mx-auto md:mx-0 shrink-0">
+              <Image
+                src="/Explore_Austin.jpg"
+                alt="John Thomas di Bari leading young men in the wilderness through Explore Austin"
+                fill
+                sizes="(min-width: 768px) 400px, 100vw"
+                className="object-cover object-top"
+              />
             </div>
-          */}
-          <div className="relative w-full aspect-video bg-[oklch(0.06_0.009_57)] border border-border flex flex-col items-center justify-center gap-4 group">
-            <div className="w-14 h-14 rounded-full border border-[#c4813d]/40 flex items-center justify-center group-hover:border-[#c4813d] group-hover:bg-[#c4813d]/10 transition-all duration-300">
-              <svg
-                viewBox="0 0 24 24"
-                className="w-5 h-5 fill-[#c4813d]/60 group-hover:fill-[#c4813d] transition-colors duration-300 translate-x-0.5"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M8 5.14v13.72a1 1 0 0 0 1.496.868l11-6.86a1 1 0 0 0 0-1.736l-11-6.86A1 1 0 0 0 8 5.14z" />
-              </svg>
+
+            <div className="flex flex-col gap-10">
+              <div className="flex flex-col gap-6 text-foreground/60 font-sans text-base md:text-lg leading-relaxed">
+                <p>
+                  I know what addiction costs. I have paid some of that price
+                  myself — and watched people I love pay the rest.
+                </p>
+                <p>
+                  In my early twenties, I was asked to leave UT for two
+                  semesters. I was kicked out of the dorms. I lost my job. I
+                  was arrested. I woke up in a hospital. What I could not see
+                  then — what addiction rarely lets you see — is that
+                  beneath the drinking was a young man who had no idea who
+                  he was, what he felt, or how to say any of it out loud.
+                </p>
+                <p>
+                  It was outpatient treatment at La Hacienda, and
+                  backpacking, that began to change that. Not because
+                  someone fixed me. But because for the first time, I was in
+                  an environment that asked something true of me — and gave
+                  me the space to respond honestly.
+                </p>
+                <p>
+                  My father drank throughout my childhood. I spent years
+                  holding my breath, waiting for our family to fall apart,
+                  watching my mother plead with him to stop. My uncle — the
+                  man I hunted and fished with, whose laugh I can still hear
+                  — became addicted to alcohol and pain medication. The
+                  damage he left behind still moves through our family like
+                  a current. He died in an HEB, alone, after falling and
+                  hitting his head.
+                </p>
+                <p>
+                  Addiction does not stay in one person. It travels. It
+                  inherits. It waits.
+                </p>
+                <p>
+                  For six years I worked with Explore Austin — taking young
+                  men from underserved communities in Austin into the
+                  wilderness, from sixth grade through senior year of high
+                  school. I watched boys who had never been seen as leaders
+                  become exactly that. I watched confidence grow in real
+                  time, out on a trail, at the edge of something hard and
+                  beautiful. I watched what happens when a young man is
+                  witnessed by a safe, caring, present man — and realizes
+                  for the first time that he is worth witnessing.
+                </p>
+                <p>
+                  That is why I built Trails of Transformation. Not as a
+                  program. As an answer to something I have lived.
+                </p>
+                <p>
+                  I believe in this work the way I believe in water —
+                  because I know what it is to be thirsty, and I know what
+                  it is to finally drink.
+                </p>
+              </div>
+
+              <blockquote className="border-l-2 border-[#c4813d] pl-6 md:pl-8 py-2">
+                <p className="font-display italic text-xl md:text-2xl text-foreground/75 leading-snug mb-4">
+                  &ldquo;The wilderness does not fix you. It shows you that
+                  you were never broken — only lost. And it gives you the
+                  landscape to find your way back.&rdquo;
+                </p>
+                <cite className="not-italic text-foreground/35 font-sans text-xs tracking-[0.2em] uppercase">
+                  — John Thomas di Bari
+                </cite>
+              </blockquote>
+
+              {/*
+                Video placeholder — swap for a real embed later, e.g.:
+                <div className="relative w-full aspect-video bg-[oklch(0.06_0.009_57)] border border-border overflow-hidden">
+                  <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="John Thomas di Bari" className="absolute inset-0 w-full h-full" allowFullScreen />
+                </div>
+              */}
+              <div className="relative w-full aspect-video bg-[oklch(0.06_0.009_57)] border border-border flex flex-col items-center justify-center gap-4 group">
+                <div className="w-14 h-14 rounded-full border border-[#c4813d]/40 flex items-center justify-center group-hover:border-[#c4813d] group-hover:bg-[#c4813d]/10 transition-all duration-300">
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="w-5 h-5 fill-[#c4813d]/60 group-hover:fill-[#c4813d] transition-colors duration-300 translate-x-0.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M8 5.14v13.72a1 1 0 0 0 1.496.868l11-6.86a1 1 0 0 0 0-1.736l-11-6.86A1 1 0 0 0 8 5.14z" />
+                  </svg>
+                </div>
+                <span className="text-foreground/25 font-sans text-[0.65rem] tracking-[0.25em] uppercase text-center px-6">
+                  Video coming soon — John Thomas di Bari
+                </span>
+              </div>
             </div>
-            <span className="text-foreground/25 font-sans text-[0.65rem] tracking-[0.25em] uppercase text-center px-6">
-              Video coming soon — John Thomas di Bari
-            </span>
           </div>
         </div>
       </section>
@@ -421,6 +467,22 @@ export default function PartnershipPage() {
             into honesty, and from survival into something that feels worth
             surviving for. Here is how we hold that container.
           </p>
+
+          <div className="w-full max-w-[900px] mx-auto mb-16 md:mb-20">
+            <div className="relative w-full aspect-video rounded-lg border border-[#c4813d]/40 overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/XEY4nwOa7ws"
+                title="Trails of Transformation — 2024 Coyote Gulch Expedition"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+            <p className="text-center italic text-foreground/40 font-sans text-sm mt-5">
+              A window into what awaits — footage from our 2024 Coyote Gulch
+              expedition.
+            </p>
+          </div>
 
           <div className="flex flex-col gap-14 md:gap-16 mb-16">
             {EXPERIENCE.map((e) => (
@@ -453,8 +515,19 @@ export default function PartnershipPage() {
       <section
         id="gap-worth-filling"
         className="relative border-y border-[#c4813d]/25 py-24 md:py-40 px-8 md:px-16 lg:px-24 overflow-hidden"
-        style={{ background: "hsl(28, 30%, 3%)" }}
       >
+        {/* Background photo */}
+        <Image
+          src="/Wide_Canyon.jpg"
+          alt="Wide canyon landscape in the American Southwest"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+
+        {/* Dark overlay — keeps text clearly readable over the canyon photo */}
+        <div className="absolute inset-0 bg-[#0d0a07]/75" />
+
         {/* Grain texture — sets this section apart from its neighbors */}
         <div
           className="absolute inset-0 opacity-[0.035] pointer-events-none"
