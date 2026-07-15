@@ -35,10 +35,41 @@ const PILLARS = [
 ];
 
 const RESEARCH = [
-  "Studies published in Proceedings of the National Academy of Sciences show that time in nature significantly reduces rumination — the repetitive negative thought patterns strongly linked to depression and addiction.",
-  "A 2019 study found that spending at least 120 minutes per week in nature is associated with significantly better health and wellbeing outcomes.",
-  "Adventure therapy has demonstrated meaningful reductions in substance use, improved self-efficacy, and stronger social connection in men in recovery.",
-  "The Journal of Substance Abuse Treatment has documented that peer connection and shared challenge are among the strongest predictors of sustained sobriety.",
+  {
+    headline: "59% more likely to report good health.",
+    body: "A landmark 2019 study published in Scientific Reports drew on nearly 20,000 respondents across 18 countries and found that people who spent at least 120 minutes per week in nature were significantly more likely to report good health and high wellbeing — regardless of how that time was distributed. For men in recovery, whose nervous systems are often dysregulated and depleted, regular time in nature is not a luxury. It is medicine.",
+    citation: "White et al. (2019), Scientific Reports",
+    linkText: "Read the study",
+    url: "https://www.nature.com/articles/s41598-019-44097-3",
+  },
+  {
+    headline: "85% of studies show positive outcomes for nature-based addiction intervention.",
+    body: "A 2023 systematic review published in a peer-reviewed journal screened over 8,000 articles published between 2013 and 2023, ultimately analyzing 21 studies on natural environment interventions and drug dependence. 85% of those studies showed positive outcomes — including direct improvement in drug dependence, reduced use, and improved treatment engagement across alcohol, tobacco, opioids, and other substances.",
+    citation: "Iheanacho et al. (2023), International Journal of Innovative Environmental Studies Research",
+    linkText: "Read the study",
+    url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11570648/",
+  },
+  {
+    headline: "Adventure-based programs reduced relapse rates by 27–53%.",
+    body: "A 2023 meta-analysis found that adventure-based interventions reduced 12-month relapse rates by 27 to 53 percent compared to standard outpatient care alone. In a separate study, only 31 percent of adventure therapy participants had relapsed at 10 months post-program, compared to 58 percent in the comparison group receiving traditional treatment. These numbers represent real people — men who stayed sober because something reached them that talk therapy alone could not.",
+    citation: "Journal of Substance Abuse Treatment (2023) meta-analysis; Black Bear Lodge clinical review",
+    linkText: "Read more",
+    url: "https://blackbearrehab.com/treatment/addiction-therapy-counseling/effectiveness-adventure-therapy/",
+  },
+  {
+    headline: "Men-only groups dramatically improve treatment engagement.",
+    body: "A 2020 study on men with depression found that men-only group settings were described by participants as a key factor in successful treatment engagement. Participants reported that gender-specific groups reduced the social risk of vulnerability and created conditions in which honest emotional engagement became possible. For many men, the presence of other men — not clinicians — is what makes it safe enough to tell the truth.",
+    citation: "Momentum Recovery (2024), citing peer-reviewed research on gender-specific adventure therapy",
+    linkText: "Read more",
+    url: "https://www.momentumrecovery.com/blog/adventure-therapy-young-adult-men-recovery",
+  },
+  {
+    headline: "Peer bonds built through shared challenge outlast treatment.",
+    body: "Research on social bonding consistently shows that doing something difficult alongside someone creates trust faster and more durably than verbal interaction alone. In addiction recovery, peer bonds are one of the strongest predictors of long-term sobriety. Programs that generate those bonds through shared physical experience — not just group discussion — are building something that clinical treatment alone rarely produces.",
+    citation: "Momentum Recovery (2026), The Research Case for Adventure Therapy in Addiction Treatment",
+    linkText: "Read the research",
+    url: "https://www.momentumrecovery.com/blog/does-adventure-therapy-work-research-evidence",
+  },
 ];
 
 const FORMATS = [
@@ -190,19 +221,43 @@ export default function PartnershipPage() {
           <p className="text-[#c4813d] text-[0.65rem] tracking-[0.35em] uppercase font-sans mb-6">
             The Research
           </p>
-          <h2 className="font-display text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] text-foreground mb-16">
-            The Evidence Behind the Trail.
+          <h2 className="font-display text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] text-foreground mb-8">
+            The Evidence Behind the Work.
           </h2>
+          <p className="text-foreground/55 font-sans text-base md:text-lg leading-relaxed max-w-3xl mb-16 md:mb-20">
+            This is not anecdotal. A growing body of peer-reviewed research
+            supports what guides and clinicians have observed for decades —
+            that nature heals, that shared challenge builds lasting bonds,
+            and that wilderness-based programs meaningfully improve outcomes
+            for men in recovery. Below are key findings from published
+            studies.
+          </p>
 
-          <div className="grid md:grid-cols-2 gap-x-10 gap-y-10 mb-16">
+          <div className="flex flex-col gap-14 md:gap-16 mb-20">
             {RESEARCH.map((r) => (
-              <blockquote key={r} className="border-l-2 border-[#c4813d]/50 pl-6 md:pl-8 py-1">
-                <p className="text-foreground/65 font-sans text-base leading-relaxed">{r}</p>
-              </blockquote>
+              <div key={r.headline} className="border-t border-border pt-10 first:border-t-0 first:pt-0">
+                <p className="font-display text-[clamp(1.6rem,3.2vw,2.5rem)] leading-[1.15] text-[#c4813d] mb-5">
+                  {r.headline}
+                </p>
+                <p className="text-foreground/60 font-sans text-base md:text-lg leading-relaxed max-w-3xl mb-4">
+                  {r.body}
+                </p>
+                <p className="text-foreground/30 font-sans text-xs tracking-wide">
+                  {r.citation} &nbsp;—&nbsp;{" "}
+                  <a
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#c4813d]/60 hover:text-[#c4813d] underline underline-offset-2 transition-colors duration-150"
+                  >
+                    {r.linkText}
+                  </a>
+                </p>
+              </div>
             ))}
           </div>
 
-          <p className="font-display italic text-xl md:text-2xl text-foreground/55 leading-snug max-w-3xl">
+          <p className="font-display italic text-[clamp(1.5rem,3vw,2rem)] text-foreground/70 leading-snug text-center max-w-3xl mx-auto">
             Nature is not a supplement to recovery. For many men, it is the
             threshold through which recovery becomes possible.
           </p>
