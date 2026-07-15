@@ -73,14 +73,30 @@ export default function PartnershipPage() {
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
       <section
-        className="relative flex flex-col items-center justify-center min-h-screen px-8 md:px-16 lg:px-24 pt-20 pb-20"
-        style={{
-          background:
-            "radial-gradient(ellipse 70% 60% at 50% 100%, rgba(120, 55, 8, 0.18) 0%, transparent 70%), " +
-            "hsl(28, 28%, 4%)",
-        }}
+        className="relative flex flex-col items-center justify-center min-h-screen px-8 md:px-16 lg:px-24 pt-20 pb-20 overflow-hidden"
       >
-        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+        {/* Background photo */}
+        <Image
+          src="/fire.JPG"
+          alt="Campfire in the canyon at night"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+
+        {/* Dark overlay — keeps text readable while the fire and men stay visible */}
+        <div className="absolute inset-0 bg-[#0d0a07]/65" />
+
+        {/* Warm amber vignette to match site aesthetic */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 70% 60% at 50% 100%, rgba(120, 55, 8, 0.18) 0%, transparent 70%)",
+          }}
+        />
+
+        <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
           <p className="text-[#c4813d] text-[0.65rem] tracking-[0.4em] uppercase font-sans mb-8">
             A Partnership Proposal &nbsp;·&nbsp; Trails of Transformation
           </p>
@@ -94,7 +110,7 @@ export default function PartnershipPage() {
           </p>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3">
+        <div className="absolute z-10 bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3">
           <div className="h-10 w-px bg-gradient-to-b from-[#c4813d]/40 to-transparent" />
         </div>
       </section>
