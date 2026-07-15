@@ -526,7 +526,7 @@ export default function PartnershipPage() {
         />
 
         {/* Dark overlay — keeps text clearly readable over the canyon photo */}
-        <div className="absolute inset-0 bg-[#0d0a07]/75" />
+        <div className="absolute inset-0 bg-[#0d0a07]/55" />
 
         {/* Grain texture — sets this section apart from its neighbors */}
         <div
