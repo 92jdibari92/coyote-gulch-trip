@@ -209,53 +209,100 @@ export default function PartnershipPage() {
         </div>
       </section>
 
-      {/* ── Who We Are ──────────────────────────────────────────── */}
-      <section id="who-we-are" className="bg-[oklch(0.095_0.013_57)] border-t border-border py-24 md:py-36 px-8 md:px-16 lg:px-24">
-        <div className="max-w-[64rem] mx-auto">
+      {/* ── This Is Personal ────────────────────────────────────── */}
+      <section id="this-is-personal" className="bg-[oklch(0.095_0.013_57)] border-t border-border py-24 md:py-36 px-8 md:px-16 lg:px-24">
+        <div className="max-w-[52rem] mx-auto">
           <p className="text-[#c4813d] text-[0.65rem] tracking-[0.35em] uppercase font-sans mb-6">
-            Who We Are
+            This Is Personal
           </p>
-          <h2 className="font-display text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] text-foreground mb-16">
-            Founded on a Personal Threshold.
+          <h2 className="font-display text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] text-foreground mb-10">
+            This Is Personal.
           </h2>
 
-          <div className="grid md:grid-cols-[auto,1fr] gap-10 md:gap-14 items-start">
-            <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border border-[#c4813d]/30 bg-[oklch(0.12_0.016_57)] shrink-0 mx-auto md:mx-0 flex items-center justify-center">
-              <span className="font-display text-5xl text-[#c4813d]/40">JTD</span>
-            </div>
+          <div className="flex flex-col gap-6 text-foreground/60 font-sans text-base md:text-lg leading-relaxed mb-12">
+            <p>
+              I know what addiction costs. I have paid some of that price
+              myself — and watched people I love pay the rest.
+            </p>
+            <p>
+              In my early twenties, I was asked to leave UT for two
+              semesters. I was kicked out of the dorms. I lost my job. I was
+              arrested. I woke up in a hospital. What I could not see then —
+              what addiction rarely lets you see — is that beneath the
+              drinking was a young man who had no idea who he was, what he
+              felt, or how to say any of it out loud.
+            </p>
+            <p>
+              It was outpatient treatment at La Hacienda, and backpacking,
+              that began to change that. Not because someone fixed me. But
+              because for the first time, I was in an environment that asked
+              something true of me — and gave me the space to respond
+              honestly.
+            </p>
+            <p>
+              My father drank throughout my childhood. I spent years holding
+              my breath, waiting for our family to fall apart, watching my
+              mother plead with him to stop. My uncle — the man I hunted and
+              fished with, whose laugh I can still hear — became addicted to
+              alcohol and pain medication. The damage he left behind still
+              moves through our family like a current. He died in an HEB,
+              alone, after falling and hitting his head.
+            </p>
+            <p>
+              Addiction does not stay in one person. It travels. It
+              inherits. It waits.
+            </p>
+            <p>
+              For six years I worked with Explore Austin — taking young men
+              from underserved communities in Austin into the wilderness,
+              from sixth grade through senior year of high school. I watched
+              boys who had never been seen as leaders become exactly that. I
+              watched confidence grow in real time, out on a trail, at the
+              edge of something hard and beautiful. I watched what happens
+              when a young man is witnessed by a safe, caring, present man —
+              and realizes for the first time that he is worth witnessing.
+            </p>
+            <p>
+              That is why I built Trails of Transformation. Not as a
+              program. As an answer to something I have lived.
+            </p>
+            <p>
+              I believe in this work the way I believe in water — because I
+              know what it is to be thirsty, and I know what it is to
+              finally drink.
+            </p>
+          </div>
 
-            <div className="flex flex-col gap-8">
-              <div className="flex flex-col gap-6 text-foreground/60 font-sans text-base md:text-lg leading-relaxed">
-                <p>
-                  Trails of Transformation was founded by John Thomas di
-                  Bari — an Austin native who grew up swimming in Barton
-                  Springs and running barefoot through the Greenbelt. His
-                  relationship with wild places began early and deepened
-                  through solo backpacking through Eastern Europe, motorbike
-                  travel across Southeast Asia, and years of returning to
-                  America&apos;s National Parks with the men closest to him.
-                </p>
-                <p>
-                  What he found in those wild places was not just adventure —
-                  it was a way back to himself. To clarity. To the voice of
-                  his own soul. And to a God whose presence he experienced
-                  most profoundly not in buildings, but in creation. That
-                  personal transformation became a calling: to create the
-                  conditions where other men could find what he found.
-                </p>
-              </div>
+          <blockquote className="border-l-2 border-[#c4813d] pl-6 md:pl-8 py-2 mb-12">
+            <p className="font-display italic text-xl md:text-2xl text-foreground/75 leading-snug mb-4">
+              &ldquo;The wilderness does not fix you. It shows you that you
+              were never broken — only lost. And it gives you the landscape
+              to find your way back.&rdquo;
+            </p>
+            <cite className="not-italic text-foreground/35 font-sans text-xs tracking-[0.2em] uppercase">
+              — John Thomas di Bari
+            </cite>
+          </blockquote>
 
-              <blockquote className="border-l-2 border-[#c4813d] pl-6 md:pl-8 py-2">
-                <p className="font-display italic text-xl md:text-2xl text-foreground/75 leading-snug mb-4">
-                  &ldquo;The wilderness does not fix you. It shows you that
-                  you were never broken — only lost. And it gives you the
-                  landscape to find your way back.&rdquo;
-                </p>
-                <cite className="not-italic text-foreground/35 font-sans text-xs tracking-[0.2em] uppercase">
-                  — John Thomas di Bari
-                </cite>
-              </blockquote>
+          {/*
+            Video placeholder — swap for a real embed later, e.g.:
+            <div className="relative w-full aspect-video bg-[oklch(0.06_0.009_57)] border border-border overflow-hidden">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="John Thomas di Bari" className="absolute inset-0 w-full h-full" allowFullScreen />
             </div>
+          */}
+          <div className="relative w-full aspect-video bg-[oklch(0.06_0.009_57)] border border-border flex flex-col items-center justify-center gap-4 group">
+            <div className="w-14 h-14 rounded-full border border-[#c4813d]/40 flex items-center justify-center group-hover:border-[#c4813d] group-hover:bg-[#c4813d]/10 transition-all duration-300">
+              <svg
+                viewBox="0 0 24 24"
+                className="w-5 h-5 fill-[#c4813d]/60 group-hover:fill-[#c4813d] transition-colors duration-300 translate-x-0.5"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M8 5.14v13.72a1 1 0 0 0 1.496.868l11-6.86a1 1 0 0 0 0-1.736l-11-6.86A1 1 0 0 0 8 5.14z" />
+              </svg>
+            </div>
+            <span className="text-foreground/25 font-sans text-[0.65rem] tracking-[0.25em] uppercase text-center px-6">
+              Video coming soon — John Thomas di Bari
+            </span>
           </div>
         </div>
       </section>
