@@ -72,6 +72,39 @@ const RESEARCH = [
   },
 ];
 
+const EXPERIENCE = [
+  {
+    n: "01",
+    title: "The Opening Circle",
+    body: "On the first evening, before the trail begins, the group gathers around the fire. Each man shares two things: what he is leaving behind on this trip, and what he is hoping to find. This single practice does more in twenty minutes than most programs accomplish in a week. It creates immediate permission for honesty, establishes that this is a different kind of experience, and reminds every man in the circle that he is not alone in what he carries.",
+  },
+  {
+    n: "02",
+    title: "Daily Morning Check-In",
+    body: "Each morning begins with a simple question before boots hit the trail. How did you sleep? What is alive in you today? These are not therapy prompts — they are presence practices. They train men to track their inner state rather than suppress it. Over the course of a week in the wilderness, this daily ritual becomes one of the most anticipated moments of the day.",
+  },
+  {
+    n: "03",
+    title: "Evening Fire Conversations",
+    body: "Every evening, the group gathers around the fire for one structured conversation. A question is offered. Men respond when they are ready. There is no cross-talk, no fixing, no advice. Just honest men speaking and being heard — often for the first time in their lives. Questions include: Tell us about the first man you ever looked up to — and what happened to that. What do you want the men in your life to know about you that they do not? What are you most afraid of returning to when this trip ends? These conversations do not replace therapy. They make therapy more possible.",
+  },
+  {
+    n: "04",
+    title: "Man of the Day",
+    body: "Each day, one man leads. He chooses an activity, a teaching, a practice, or a skill he cares about — and he brings it to the group. One man might lead a breathwork session. Another might teach the group to identify edible plants. Another might share a poem that saved his life, or lead the group in a song, or teach everyone how to read a topographic map. The activity itself matters less than what it represents: a man being seen in his competence, his passion, and his knowledge. For men who have largely been witnessed in their brokenness, being witnessed in their power is one of the most quietly transformative moments of the entire expedition. We call it Man of the Day — and it becomes, for most men, the thing they talk about long after the trip ends.",
+  },
+  {
+    n: "05",
+    title: "Solo Time",
+    body: "On one afternoon mid-expedition, each man is given two to three hours of intentional solitude in the wilderness. He goes alone, with a journal prompt, into the landscape. The prompt is simple: Write a letter to the version of yourself who was at his lowest. Tell him what you know now. Silence and solitude in wild places do things that cannot be manufactured in any clinical setting. Men return from solo time changed — quieter, clearer, and more their own.",
+  },
+  {
+    n: "06",
+    title: "The Closing Ceremony",
+    body: "On the final evening, the group gathers one last time. Each man offers one word for what he is carrying home, and one commitment he is making to himself — spoken aloud, witnessed by every man in the circle. The expedition is then closed with prayer and gratitude. This ceremony marks the trip as a threshold. There is a before. There is an after. And the men who stand in that circle know the difference.",
+  },
+];
+
 const FORMATS = [
   {
     title: "Day Expeditions",
@@ -359,6 +392,60 @@ export default function PartnershipPage() {
               Video coming soon — John Thomas di Bari
             </span>
           </div>
+        </div>
+      </section>
+
+      {/* ── What the Experience Looks Like ──────────────────────── */}
+      <section
+        id="the-experience"
+        className="relative border-t border-border py-24 md:py-40 px-8 md:px-16 lg:px-24 overflow-hidden"
+        style={{
+          background:
+            "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(140, 70, 12, 0.12) 0%, transparent 65%), " +
+            "hsl(28, 28%, 4%)",
+        }}
+      >
+        <div className="relative z-10 max-w-[64rem] mx-auto">
+          <p className="text-[#c4813d] text-[0.65rem] tracking-[0.35em] uppercase font-sans mb-6">
+            The Container
+          </p>
+          <h2 className="font-display text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] text-foreground mb-8">
+            What the Experience Looks Like.
+          </h2>
+          <p className="text-foreground/55 font-sans text-base md:text-lg leading-relaxed max-w-3xl mb-16 md:mb-20">
+            Every Trails of Transformation expedition is built on a simple
+            conviction — that the wilderness does the deepest work when it is
+            held inside an intentional container. These are not casual
+            camping trips. They are structured threshold experiences,
+            designed to move men from isolation into connection, from shame
+            into honesty, and from survival into something that feels worth
+            surviving for. Here is how we hold that container.
+          </p>
+
+          <div className="flex flex-col gap-14 md:gap-16 mb-16">
+            {EXPERIENCE.map((e) => (
+              <div key={e.n} className="border-t border-border/60 pt-10 first:border-t-0 first:pt-0">
+                <div className="flex items-baseline gap-4 mb-4">
+                  <span className="font-mono text-[#c4813d]/40 text-xs shrink-0">{e.n}</span>
+                  <h3 className="font-display text-2xl md:text-3xl text-[#c4813d] leading-snug">
+                    {e.title}
+                  </h3>
+                </div>
+                <p className="text-foreground/65 font-sans text-base md:text-lg leading-relaxed max-w-3xl">
+                  {e.body}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-foreground/55 font-sans text-base md:text-lg leading-relaxed max-w-3xl border-t border-border/60 pt-10">
+            Before departure, we coordinate directly with each client&apos;s
+            treatment team — establishing clinical context and any relevant
+            considerations for their time in the field. When the expedition
+            ends, we provide a written summary of each participant&apos;s
+            engagement and breakthroughs to support continuity of care. This
+            is not an add-on to your program. It is an extension of it.
+          </p>
         </div>
       </section>
 
