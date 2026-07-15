@@ -226,7 +226,7 @@ export default function PartnershipPage() {
         <div className="absolute inset-0 bg-[#0d0a07]/20" />
       </div>
       <p className="bg-background text-center italic text-foreground/40 font-sans text-sm py-6 px-8">
-        Coyote Gulch, Utah — a previous Trails of Transformation expedition.
+        Glacier National Park, Montana — a previous Trails of Transformation expedition.
       </p>
 
       {/* ── What We Offer ───────────────────────────────────────── */}
@@ -254,13 +254,13 @@ export default function PartnershipPage() {
                 key={p.n}
                 className="bg-[oklch(0.095_0.013_57)] hover:bg-[oklch(0.12_0.016_57)] transition-colors duration-300 flex flex-col"
               >
-                <div className="relative w-full h-[200px] rounded-t-sm overflow-hidden">
+                <div className="relative w-full h-[320px] rounded-t-sm overflow-hidden">
                   <Image
                     src={p.image}
                     alt={p.title}
                     fill
                     sizes="(min-width: 640px) 50vw, 100vw"
-                    className="object-cover"
+                    className="object-cover object-center"
                   />
                 </div>
                 <div className="p-8 md:p-10 flex flex-col gap-4">
@@ -479,8 +479,8 @@ export default function PartnershipPage() {
               />
             </div>
             <p className="text-center italic text-foreground/40 font-sans text-sm mt-5">
-              A window into what awaits — footage from our 2024 Coyote Gulch
-              expedition.
+              A window into what awaits — footage from a mens trip to Coyote
+              Gulch in 2024.
             </p>
           </div>
 
