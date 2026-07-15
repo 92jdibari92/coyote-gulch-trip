@@ -85,7 +85,7 @@ export default function PartnershipPage() {
         />
 
         {/* Dark overlay — keeps text readable while the fire and men stay visible */}
-        <div className="absolute inset-0 bg-[#0d0a07]/65" />
+        <div className="absolute inset-0 bg-[#0d0a07]/35" />
 
         {/* Warm amber vignette to match site aesthetic */}
         <div
