@@ -79,7 +79,7 @@ export default function PartnershipNav() {
             <a
               href="#contact"
               onClick={close}
-              className="shrink-0 bg-[#c4813d] hover:bg-[#d4924e] text-[#0d0905] font-sans font-semibold text-[0.7rem] tracking-[0.15em] uppercase px-4 py-2 transition-colors duration-150"
+              className="hidden md:inline-block shrink-0 bg-[#c4813d] hover:bg-[#d4924e] text-[#0d0905] font-sans font-semibold text-[0.7rem] tracking-[0.15em] uppercase px-4 py-2 transition-colors duration-150"
             >
               Request a Conversation
             </a>
