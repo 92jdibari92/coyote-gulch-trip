@@ -18,6 +18,7 @@ const guides = [
     title: "Introduction Video",
     description:
       "A full overview of the expedition — the canyon, the itinerary, and what this week is really about.",
+    youtube: "https://www.youtube.com/embed/XEY4nwOa7ws",
   },
 ];
 
