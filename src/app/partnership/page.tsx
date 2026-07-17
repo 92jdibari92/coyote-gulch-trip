@@ -547,51 +547,42 @@ export default function PartnershipPage() {
 
           <div className="flex flex-col gap-6 text-foreground/65 font-sans text-base md:text-lg leading-relaxed">
             <p>
-              Austin has exceptional addiction treatment. The Last Resort
-              Recovery. Heartwood Recovery. The Arbor. Driftwood Courageous
-              Recovery. These are serious programs doing serious work, and
-              the men who pass through their doors are fortunate to have
-              them.
+              Austin has exceptional addiction treatment. This city is home
+              to serious programs doing serious work — programs built by
+              people who care deeply about the men and women in their
+              charge. The clinical work happening here is real, and it is
+              making a difference.
+            </p>
+            <p>This is an invitation to take that work one step further.</p>
+            <p>
+              Imagine sending a man who has just completed your program — or
+              who is in the thick of it — forty miles into canyon country
+              with nothing but what he can carry. No phone. No performance.
+              No noise. Just open sky, honest terrain, and a small group of
+              men walking beside him.
             </p>
             <p>
-              What none of them offer — what no treatment center in Austin
-              currently offers — is this: a structured, multi-day
-              backcountry wilderness expedition as part of a man&apos;s
-              continuum of care.
+              What becomes available to him there is different from what
+              becomes available in any clinical setting — not because
+              clinical work is insufficient, but because the wilderness
+              reaches something else entirely. Something ancient. Something
+              that has always known how to heal.
             </p>
             <p>
-              Equine therapy. Music therapy. Ropes courses. On-site hiking
-              trails. These are powerful tools, and they belong in
-              treatment. But they all share one limitation: they happen on
-              campus. The wilderness they offer is managed, contained, and
-              within walking distance of a clinical building.
+              Trails of Transformation exists to partner with the programs
+              already doing great work — extending their impact beyond the
+              walls of treatment and into the wild places where something
+              essential gets remembered.
             </p>
             <p>
-              What happens when you take a man forty miles into canyon
-              country with nothing but what he can carry? When there is no
-              campus to retreat to, no phone to reach for, no performance to
-              maintain? When the only thing between him and the stars is a
-              tent he put up himself?
-            </p>
-            <p>
-              Something shifts. Something that cannot be replicated on a
-              ropes course or in a therapy room or on a ranch in South
-              Austin. The research confirms it. The men who have done it
-              confirm it. And we confirm it — because we have lived it.
-            </p>
-            <p>
-              Trails of Transformation is not a treatment center. We are not
-              trying to be. We are the thing that happens after the clinical
-              work has begun — the experience that reaches the parts that
-              treatment alone cannot touch. We are the missing piece in
-              Austin&apos;s continuum of care.
+              We are actively seeking 2 to 3 founding partner organizations
+              in Austin who want to offer their clients an experience unlike
+              anything else in the continuum of care. Not as a replacement
+              for what you do — as a powerful extension of it.
             </p>
             <p className="text-foreground/80">
-              We are actively seeking 2 to 3 founding partner organizations
-              who want to be the first in this city to offer their clients
-              something no one else can. The organizations that say yes to
-              this will be doing something genuinely new — and genuinely
-              powerful — for the men in their care.
+              The men you serve deserve both. And together, we can give it
+              to them.
             </p>
           </div>
         </div>
