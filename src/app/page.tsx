@@ -6,6 +6,7 @@ import Experience from "@/components/sections/Experience";
 import MapSection from "@/components/sections/MapSection";
 import FireBreak from "@/components/sections/FireBreak";
 import Included from "@/components/sections/Included";
+import ExperienceHolds from "@/components/sections/ExperienceHolds";
 import Guides from "@/components/sections/Guides";
 import Pricing from "@/components/sections/Pricing";
 import ApplyForm from "@/components/sections/ApplyForm";
@@ -22,6 +23,7 @@ export default function Home() {
       <MapSection />
       <FireBreak />
       <Included />
+      <ExperienceHolds />
       <Guides />
       <Pricing />
       <ApplyForm />
