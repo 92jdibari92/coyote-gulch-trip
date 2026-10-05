@@ -10,6 +10,7 @@ const LINKS = [
   { label: "Your Guides",    href: "#your-guides"     },
   { label: "Investment",     href: "#investment"      },
   { label: "Podcast",        href: "#podcast"         },
+  { label: "Holy Walks",     href: "/holy-walks"      },
   { label: "Upcoming Trips", href: "/upcoming-trips"  },
   { label: "Partnership",    href: "/partnership"     },
 ];
@@ -69,7 +70,12 @@ export default function StickyNav() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-foreground/45 hover:text-foreground/85 font-sans text-[0.7rem] tracking-[0.15em] uppercase whitespace-nowrap px-3 py-1.5 transition-colors duration-150"
+                className={[
+                  "font-sans text-[0.7rem] tracking-[0.15em] uppercase whitespace-nowrap px-3 py-1.5 transition-colors duration-150",
+                  link.label === "Holy Walks"
+                    ? "text-[#c4813d] hover:text-[#d4924e]"
+                    : "text-foreground/45 hover:text-foreground/85",
+                ].join(" ")}
               >
                 {link.label}
               </a>
@@ -131,7 +137,12 @@ export default function StickyNav() {
                 key={link.href}
                 href={link.href}
                 onClick={close}
-                className="text-foreground/50 hover:text-foreground/85 font-sans text-[0.75rem] tracking-[0.18em] uppercase py-3.5 border-b border-border/50 last:border-0 transition-colors duration-150"
+                className={[
+                  "font-sans text-[0.75rem] tracking-[0.18em] uppercase py-3.5 border-b border-border/50 last:border-0 transition-colors duration-150",
+                  link.label === "Holy Walks"
+                    ? "text-[#c4813d] hover:text-[#d4924e]"
+                    : "text-foreground/50 hover:text-foreground/85",
+                ].join(" ")}
               >
                 {link.label}
               </a>
