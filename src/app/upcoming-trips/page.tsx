@@ -339,7 +339,7 @@ export default function UpcomingTripsPage() {
             Trails of Transformation
           </span>
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
-            <Link href="/" className="text-foreground/25 hover:text-foreground/50 font-sans text-xs tracking-[0.2em] uppercase transition-colors duration-150">
+            <Link href="/trips/coyote-gulch" className="text-foreground/25 hover:text-foreground/50 font-sans text-xs tracking-[0.2em] uppercase transition-colors duration-150">
               Coyote Gulch 2026
             </Link>
             <span className="hidden sm:block text-foreground/15 text-xs">·</span>

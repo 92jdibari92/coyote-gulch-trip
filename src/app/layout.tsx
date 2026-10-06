@@ -23,9 +23,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Coyote Gulch 2026 | Men's Backpacking Expedition",
+  title: "Trails of Transformation",
   description:
-    "Seven days in the ancient canyons of southern Utah. A men's backpacking expedition through Coyote Gulch — November 7–14, 2026.",
+    "An outer wilderness for the inner one. Nature-based expeditions, a weekly community walk, and work with addiction and mental health care — led by John Thomas di Bari.",
 };
 
 export default function RootLayout({

@@ -1,0 +1,65 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import StickyNav from "@/components/StickyNav";
+import Hero from "@/components/sections/Hero";
+import TripStats from "@/components/sections/TripStats";
+import Experience from "@/components/sections/Experience";
+import MapSection from "@/components/sections/MapSection";
+import FireBreak from "@/components/sections/FireBreak";
+import Included from "@/components/sections/Included";
+import ExperienceHolds from "@/components/sections/ExperienceHolds";
+import Guides from "@/components/sections/Guides";
+import Pricing from "@/components/sections/Pricing";
+import ApplyForm from "@/components/sections/ApplyForm";
+import Podcast from "@/components/sections/Podcast";
+import StayInTouch from "@/components/sections/StayInTouch";
+
+export const metadata: Metadata = {
+  title: "Coyote Gulch 2026 | Men's Backpacking Expedition",
+  description:
+    "Seven days in the ancient canyons of southern Utah. A men's backpacking expedition through Coyote Gulch — November 7–14, 2026.",
+};
+
+export default function CoyoteGulchPage() {
+  return (
+    <main>
+      <StickyNav />
+      <Hero />
+      <TripStats />
+      <Experience />
+      <MapSection />
+      <FireBreak />
+      <Included />
+      <ExperienceHolds />
+      <Guides />
+      <Pricing />
+      <ApplyForm />
+      <Podcast />
+      <StayInTouch />
+
+      <footer className="border-t border-border py-14 px-8 md:px-16">
+        <div className="max-w-[90rem] mx-auto flex flex-col items-center gap-4">
+          <Image
+            src="/Trails logo.PNG"
+            alt="Trails"
+            width={160}
+            height={44}
+            className="h-10 w-auto object-contain opacity-70"
+          />
+          <span className="font-display text-base text-foreground/35 leading-none">
+            Trails of Transformation
+          </span>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
+            <span className="text-foreground/25 font-sans text-xs tracking-[0.2em] uppercase">
+              Coyote Gulch Expedition &nbsp;·&nbsp; 2026
+            </span>
+            <span className="hidden sm:block text-foreground/15 text-xs">·</span>
+            <span className="text-foreground/20 font-sans text-xs">
+              Grand Staircase–Escalante National Monument, Utah
+            </span>
+          </div>
+        </div>
+      </footer>
+    </main>
+  );
+}
