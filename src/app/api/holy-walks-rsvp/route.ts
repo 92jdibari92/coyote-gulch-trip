@@ -174,7 +174,7 @@ export async function POST(req: NextRequest) {
       }),
       resend.emails.send({
         from: "explore@trailsoftransformation.co",
-        to: "johnthomasspeaks@gmail.com",
+        to: "92jdibari92@gmail.com",
         subject: `New Holy Walks RSVP: ${fullName} — ${walkDateLong}`,
         html: NOTIFICATION_EMAIL_HTML(fullName, email, phone, notes, walkDateLong),
       }),
