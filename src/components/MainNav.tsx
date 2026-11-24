@@ -5,8 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const LINKS = [
-  { label: "What We Believe", href: "#mission"         },
-  { label: "Our Story",       href: "#story"            },
   { label: "Guides",          href: "#guides"           },
   { label: "Podcast",         href: "#podcast"          },
   { label: "Expeditions",     href: "/upcoming-trips"   },
