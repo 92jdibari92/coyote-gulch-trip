@@ -230,7 +230,7 @@ export default function Home() {
           </div>
 
           {/* Headline */}
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-[#C09618] mb-4">
+          <p className="font-sans text-xs font-semibold tracking-[0.25em] uppercase text-[#C09618] mb-4">
             The Foundation
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-[#F5F0E8] mb-8 leading-tight">
@@ -238,7 +238,7 @@ export default function Home() {
           </h2>
 
           {/* Body copy */}
-          <div className="space-y-6 text-[#CCBC9A] text-lg leading-relaxed font-light">
+          <div className="space-y-6 text-[#CCBC9A] font-sans text-lg leading-relaxed font-light">
             <p>
               These trips don&apos;t work because of a carefully designed
               itinerary, provoking journal questions, or any excellence of
@@ -278,13 +278,13 @@ export default function Home() {
               works, which God prepared [for us] beforehand, so that we
               would walk in them.&rdquo;
             </p>
-            <cite className="block mt-4 text-sm tracking-widest uppercase text-[#C09618] not-italic">
+            <cite className="font-sans block mt-4 text-sm tracking-widest uppercase text-[#C09618] not-italic">
               Ephesians 2:10 — Amplified Bible
             </cite>
           </blockquote>
 
           {/* Closing */}
-          <div className="space-y-6 text-[#CCBC9A] text-lg leading-relaxed font-light">
+          <div className="space-y-6 text-[#CCBC9A] font-sans text-lg leading-relaxed font-light">
             <p>
               These trips are an invitation to take an honest inventory. To
               sit in the spaciousness of God&apos;s creation and ask with an
