@@ -247,7 +247,7 @@ export default function Home() {
               than any of us is already at work.
             </p>
             <p>
-              The canyon, the silence, the brotherhood, the unexpected
+              The wilderness, the silence, the brotherhood, the unexpected
               moments — none of that was manufactured. What we do is create
               the conditions: remove the noise, slow down, hold space, and
               show up present. What happens next belongs to God.
@@ -260,7 +260,7 @@ export default function Home() {
               because we listened.
             </p>
             <p>
-              Because every man who walks into that canyon is not an
+              Because every man who walks into that wilderness is not an
               accident. He is a masterpiece. He carries within him specific,
               glorious works that God prepared and ordained for him before
               he ever took his first breath. The wilderness gives him room —
@@ -292,7 +292,7 @@ export default function Home() {
               living from that place — or have I drifted?
             </p>
             <p>
-              If the answer is yes, let the canyon be a place of awe and
+              If the answer is yes, let the wilderness be a place of awe and
               celebration. If the answer is not yet, let it be a place of
               discovery and return. Either way, there is nothing to fear.
               God&apos;s plan for you is not a burden — it is the most
@@ -300,7 +300,7 @@ export default function Home() {
               imaginable.
             </p>
             <p>
-              The canyon has a way of making all of that feel possible
+              The wilderness has a way of making all of that feel possible
               again.
             </p>
           </div>
