@@ -15,9 +15,9 @@ import Podcast from "@/components/sections/Podcast";
 import StayInTouch from "@/components/sections/StayInTouch";
 
 export const metadata: Metadata = {
-  title: "Coyote Gulch 2026 | Men's Backpacking Expedition",
+  title: "Coyote Gulch 2027 | Men's Backpacking Expedition",
   description:
-    "Seven days in the ancient canyons of southern Utah. A men's backpacking expedition through Coyote Gulch — November 7–14, 2026.",
+    "Seven days in the ancient canyons of southern Utah. A men's backpacking expedition through Coyote Gulch — November 6–13, 2027.",
 };
 
 export default function CoyoteGulchPage() {
@@ -51,7 +51,7 @@ export default function CoyoteGulchPage() {
           </span>
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
             <span className="text-foreground/25 font-sans text-xs tracking-[0.2em] uppercase">
-              Coyote Gulch Expedition &nbsp;·&nbsp; 2026
+              Coyote Gulch Expedition &nbsp;·&nbsp; 2027
             </span>
             <span className="hidden sm:block text-foreground/15 text-xs">·</span>
             <span className="text-foreground/20 font-sans text-xs">
