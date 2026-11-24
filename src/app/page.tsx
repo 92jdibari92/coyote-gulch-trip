@@ -214,6 +214,100 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── We Hold the Space ───────────────────── */}
+      <section className="py-20 px-6 bg-[#0d0905]">
+        <div className="max-w-4xl mx-auto">
+
+          {/* Photo */}
+          <div className="relative w-full h-[520px] mb-12 overflow-hidden rounded-sm">
+            <Image
+              src="/images/canyon_brotherhood.JPG"
+              alt="Brotherhood in Coyote Gulch canyon"
+              fill
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
+
+          {/* Headline */}
+          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-[#C09618] mb-4">
+            The Foundation
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl text-[#F5F0E8] mb-8 leading-tight">
+            We Hold the Space.<br />He Fills It.
+          </h2>
+
+          {/* Body copy */}
+          <div className="space-y-6 text-[#CCBC9A] text-lg leading-relaxed font-light">
+            <p>
+              These trips don&apos;t work because of a carefully designed
+              itinerary, provoking journal questions, or any excellence of
+              guiding or facilitating. We are simply imperfect shepherds,
+              obedient to a calling. They work because something far greater
+              than any of us is already at work.
+            </p>
+            <p>
+              The canyon, the silence, the brotherhood, the unexpected
+              moments — none of that was manufactured. What we do is create
+              the conditions: remove the noise, slow down, hold space, and
+              show up present. What happens next belongs to God.
+            </p>
+            <p>
+              On our last expedition, the trip deviated from the plan in
+              almost every direction. And it was perfect. The right men were
+              there. The right moments arrived. The medicine that needed to
+              be received was received. Not because we scripted it —
+              because we listened.
+            </p>
+            <p>
+              Because every man who walks into that canyon is not an
+              accident. He is a masterpiece. He carries within him specific,
+              glorious works that God prepared and ordained for him before
+              he ever took his first breath. The wilderness gives him room —
+              perhaps for the first time in a long time — to get quiet
+              enough to feel into that truth.
+            </p>
+          </div>
+
+          {/* Scripture block */}
+          <blockquote className="my-10 border-l-2 border-[#C09618] pl-6 py-2">
+            <p className="text-[#F5F0E8] text-lg md:text-xl leading-relaxed italic font-display">
+              &ldquo;For we are His workmanship [His own master work, a work
+              of art], created in Christ Jesus [reborn from above —
+              spiritually transformed, renewed, ready to be used] for good
+              works, which God prepared [for us] beforehand, so that we
+              would walk in them.&rdquo;
+            </p>
+            <cite className="block mt-4 text-sm tracking-widest uppercase text-[#C09618] not-italic">
+              Ephesians 2:10 — Amplified Bible
+            </cite>
+          </blockquote>
+
+          {/* Closing */}
+          <div className="space-y-6 text-[#CCBC9A] text-lg leading-relaxed font-light">
+            <p>
+              These trips are an invitation to take an honest inventory. To
+              sit in the spaciousness of God&apos;s creation and ask with an
+              open heart: am I walking in what He prepared for me? Am I
+              living from that place — or have I drifted?
+            </p>
+            <p>
+              If the answer is yes, let the canyon be a place of awe and
+              celebration. If the answer is not yet, let it be a place of
+              discovery and return. Either way, there is nothing to fear.
+              God&apos;s plan for you is not a burden — it is the most
+              alive, most specific, most glorious version of your life
+              imaginable.
+            </p>
+            <p>
+              The canyon has a way of making all of that feel possible
+              again.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
       <MeetTheGuides />
 
       <Podcast />
