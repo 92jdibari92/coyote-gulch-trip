@@ -39,7 +39,7 @@ export default function MissionBreak() {
           className="font-display italic text-foreground/80 text-[clamp(1.25rem,3vw,2rem)] tracking-wide text-center px-8 drop-shadow-lg"
           style={{ textShadow: "0 2px 24px rgba(0,0,0,0.8)" }}
         >
-          &ldquo;This isn&apos;t about the miles.<br />It&apos;s about what the miles uncover.&rdquo;
+          &ldquo;Into the forest I go,<br />to lose my mind and find my soul.&rdquo;
         </p>
       </div>
     </div>
