@@ -34,13 +34,19 @@ export default function MissionBreak() {
       </div>
 
       {/* Centered text overlay */}
-      <div className="absolute inset-0 flex items-center justify-center z-10">
+      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 gap-4">
         <p
           className="font-display italic text-foreground/80 text-[clamp(1.25rem,3vw,2rem)] tracking-wide text-center px-8 drop-shadow-lg"
           style={{ textShadow: "0 2px 24px rgba(0,0,0,0.8)" }}
         >
           &ldquo;Into the forest I go,<br />to lose my mind and find my soul.&rdquo;
         </p>
+        <cite
+          className="not-italic text-foreground/60 font-sans text-xs tracking-[0.2em] uppercase"
+          style={{ textShadow: "0 2px 24px rgba(0,0,0,0.8)" }}
+        >
+          — John Muir
+        </cite>
       </div>
     </div>
   );
